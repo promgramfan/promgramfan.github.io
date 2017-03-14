@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<div class="photo">
+					<ul class="clearfloat">
+						<li>
+							<a href="">
+								<img src="img/1.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/2.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/3.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/4.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/5.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/6.jpg" alt="剑宗" />
+								<div class="text clearfloat">
+									<h1>1</h1>
+									<div>
+										<h2>剑宗</h2>
+										<span>角色扮演</span>
+									</div>
+								</div>
+								<p>大型3D武侠修仙网页游戏，全视角3D战斗！</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+					
+				<div class="play">
+					<h1>大家都爱玩</h1>
+					<ul>
+						<li>
+							<a href=""  class="clearfloat">
+								<img src="img/s1.jpg" alt="大天使之剑" />
+								<div>
+									<h3>大天使之剑</h3>
+									<p>即时策略</p>
+									<span>37游戏</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" class="clearfloat">
+								<img src="img/s2.jpg" alt="大天使之剑" />
+								<div>
+									<h3>大天使之剑</h3>
+									<p>即时策略</p>
+									<span>37游戏</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="" class="clearfloat">
+								<img src="img/s3.jpg" alt="大天使之剑" />
+								<div>
+									<h3>大天使之剑</h3>
+									<p>即时策略</p>
+									<span>37游戏</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var ul=document.querySelector('.photo ul');
+			var div=document.querySelector('.photo')
+			var n=0;
+			
+			ul.innerHTML+=ul.innerHTML;
+			var w=parseInt(div.width);
+			
+			var timer=setInterval(pic,3000);
+			
+			function pic(){
+				n++;
+				move(ul,{left:-781*n},500,'linear',function(){
+					if(n==2){
+						ul.style.left=0;
+						n=0;
+					}
+				});
+			}
+			
+			
+		</script>
+	</body>
+</html>

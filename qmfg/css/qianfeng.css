@@ -1,0 +1,184 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,a,p,textarea{
+	margin: 0;
+	padding: 0;
+	font-family:arial ;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	display: block;  /*a标签中display需要设置？*/
+}
+
+img{
+	border: none;
+	display: block;
+}
+/*清除浮动*/
+.clearfloat{
+	zoom: 1;
+}
+.clearfloat:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+
+.container{
+	width: 1004px;
+	margin: 0 auto;
+}
+/*公共头部*/
+.public-header{
+	background: #232323
+}
+.header-nav{
+	background: url(../qmfg/logo.gif) no-repeat 0 0;
+	padding: 23px 0 22px 258px
+}
+.header-nav li{
+	float: left;
+}
+.header-nav li a{
+	font: 12px/17px "微软雅黑";
+	color: #ffffff;
+	width: 84px;
+	height: 17px;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #444444;
+	text-align: center;
+}
+.header-nav li:first-child a{
+	border-left: none;
+	width: 54px;
+}
+.header-nav li:last-child a{
+	border-right: none;
+}
+
+/*banner*/
+.banner{
+	width: 100%;
+	height: 270px;
+	background: url(../qmfg/banner.gif) no-repeat center;
+}
+
+/*section1*/
+#section1{
+	border-bottom: 1px solid #e0e0e0;
+}
+#section1 div{
+	background: url(../qmfg/section1-img1.gif) no-repeat 0 15px;
+	padding-left: 26px;
+}
+#section1 div p{
+	font: 12px/46px "微软雅黑";
+	color: #666666;
+}
+
+/*section2*/
+#section2 li a{
+	width: 216px;
+	margin-top: 1px;
+	border-bottom: 1px solid #d4d4d4;
+	color: #444444;
+	font: 16px/54px "微软雅黑";
+	text-align: center;
+	background: #e7e7e7;
+}
+#section2 li:first-child{
+	width: 216px;
+	height: 45px;
+	background: #e5e5e5;
+	padding: 18px 0 14px 0;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+#section2 li:first-child h1{
+	font: 24px/30px "微软雅黑";
+	color: #4b4b4b;
+	text-align: center;
+}
+#section2 li:first-child p{
+	font: 10px/15px "微软雅黑";
+	color: #b8b8b8;
+	padding-left: 98px;
+}
+#section2 .section2-nav{
+	float: left;
+	padding-right: 8px;
+	background: #f7f7f7;
+}
+
+
+
+#section2 .text{
+	float: left;
+	padding: 11px 0 0 41px;
+	width: 739px;
+}
+#section2 .text h3{
+	padding-left: 26px;
+	font: 18px/32px "微软雅黑";
+	color: #000000;
+	border-bottom: 1px dotted #c9caca;
+	background: url(../qmfg/section2-img1.gif) no-repeat 0 0;
+	margin-bottom: 36px;
+}
+#section2 .text p{
+	padding: 0 24px 0 20px;
+	font: 14px/28px "微软雅黑";
+	color: #666666;
+	text-indent: 2em;
+	margin-bottom: 23px;
+}
+#section2 .text span{
+	color: #f15a23;
+}
+
+/*section3*/
+#section3{
+	background: #222222;
+	margin-top: 40px;
+}
+#section3 .section3-nav{
+	float: left;
+	padding-top: 33px;
+}
+#section3 .section3-nav ul{
+	float: left;
+	margin-right: 40px;
+}
+#section3 .section3-nav ul:first-child{
+	margin-left: 9px;
+}
+#section3 .section3-nav ul a{
+	font: 12px/24px "微软雅黑";
+	color: #999999;
+}
+#section3 .section3-nav .title a{
+	font: 12px/48px "微软雅黑";
+	color: #ffffff;
+}
+
+#section3 img{
+	float: left;
+}
+
+#footer{
+	background: #101010;
+}
+#footer p{
+	color: #999999;
+	text-align: center;
+	font: 12px/46px "微软雅黑";
+}
+#footer p a{
+	display: inline;
+	color: #999999;
+}

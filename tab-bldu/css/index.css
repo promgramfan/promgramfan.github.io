@@ -1,0 +1,129 @@
+/*清除格式*/
+body,p,h1,h2,h3,h4,h5,ul,ol,li,dl,dd,dt,p,input,textarea{
+	padding: 0;
+	margin: 0;	
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+img{
+	border: none;
+	display: block;
+	margin: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+
+.clearfloat:after{
+	display: block;
+	clear: both;
+	content: '';
+	height: 0;
+	visibility: hidden;
+}
+.clearfloat{
+	zoom: 1;
+}
+
+
+#header{
+	background: #843030;
+	padding-top: 20px;
+	height: 303px;
+}
+.container{
+	width: 982px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.photo{
+	width: 781px;
+	overflow: hidden;
+	height: 283px;
+	position: relative;
+}
+.photo ul{
+	width: 4000px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.photo li{
+	margin-right: 24px;
+	float: left;
+	width: 237px;
+}
+.photo img{
+	width: 237px;
+	height: 163px;
+}
+
+.photo li h1{
+	font-size: 37px;
+	font-family: arial;
+	color: #ffffff;
+	float: left;
+}
+.photo .text{
+	margin: 8px 0 6px 0;
+}
+.photo .text div{
+	float: left;
+	margin-left: 15px;
+}
+.photo li h2{
+	font: 18px/25px "微软雅黑";
+	color: #ffffff;
+}
+.photo li span{
+	font: 14px/20px "微软雅黑";
+	color: #ff7a01;
+}
+.photo li p{
+	font: 14px/16px "微软雅黑";
+	color: #ffffff;
+	margin-bottom: 29px;
+}
+
+/*右侧*/
+.play{
+	width: 201px;
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+.play h1{
+	font: 18px/36px "微软雅黑";
+	background: #5c5c5c;
+	color: #ffffff;
+	text-align: center;
+}
+.play li{
+	padding: 9px;
+	background: #323232;
+}
+.play li img{
+	float: left;
+	width: 76px;
+	height: 64px;
+	margin-right: 10px;
+}
+.play li div{
+	float: left;
+}
+.play li h3{
+	color: #ffffff;
+	font: 14px/22px "微软雅黑";
+}
+.play li p{
+	color: #999999;
+	font: 12px/22px "微软雅黑";
+	
+}
+.play li span{
+	color: #ee7124;
+	font: 12px/20px "微软雅黑";
+}

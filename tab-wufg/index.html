@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 730px;
+				height: 454px;
+				margin: 30px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			#box ul{
+				position: absolute;
+				left: 0;
+			}
+			#box li{
+				list-style: none;
+				float: left;
+			}
+			#box div{
+				height: 70px;
+				width: 100%;
+				background: rgba(0,0,0,0.6);
+				position: absolute;
+				bottom: 0px;
+				font-family: "微软雅黑";
+				color: #fff;
+				text-indent: 20px;
+			}
+			#box div h3{
+				line-height: 40px;
+			}
+		</style>
+		<script src="js/move.js"></script>
+		<script>
+			window.onload=function(){
+				var ul=document.querySelector("ul");
+				var div=document.querySelector("#box div");
+				var n=0;		//用来存储图片走的个数
+				var timer;
+				
+				var textArr=[
+					{"title":'盛惠而来',"content":'京东携手天天果园百万车厘子，29元包邮畅想'},
+					{"title":'荣耀7',"content":'有点不同，0元预约，免费抽奖1999元'},
+					{"title":'老板购物节',"content":'2015我要更省，老板XX购物节精彩来袭'},
+				];
+				
+				ul.innerHTML+=ul.innerHTML;
+				
+				var lis=document.querySelectorAll("li");
+				var w=parseInt(getComputedStyle(lis[0]).width);
+				
+				ul.style.width=w*lis.length+'px';
+				
+				div.innerHTML='<h3>'+textArr[0].title+'</h3><p>'+textArr[0].content+'</p>';
+				
+				timer=setInterval(pic,3000);
+				function pic(){
+					n++;		
+					move(div,{bottom:-70},500,'linear',function(){
+						move(ul,{left:-730*n},1000,'linear',function(){
+							if(n==lis.length/2){
+								ul.style.left=0;
+								n=0;		
+							}
+							
+							div.innerHTML='<h3>'+textArr[n].title+'</h3><p>'+textArr[n].content+'</p>';
+							move(div,{bottom:0},500,'linear');
+						});
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li><img src="img2/1.jpg" alt="" /></li>
+				<li><img src="img2/2.jpg" alt="" /></li>
+				<li><img src="img2/3.jpg" alt="" /></li>
+			</ul>
+			<div>
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+	</body>
+</html>
